@@ -76,6 +76,21 @@
         .snip1226 .current a {
             transform: translateY(100%); /* Déplace le texte au survol */
         }
+
+        @media screen and (min-width : 2000px){
+            .snip1226 li {
+                font-size: 1.2em; /* Rend le texte plus petit */
+
+            }
+        }
+         @media screen and (min-width : 1700px){
+            .snip1226 li {
+                font-size: 1em; /* Rend le texte plus petit */
+
+            }
+            
+            
+        }
     </style>
 </head>
 <body>

@@ -68,7 +68,7 @@ table {
   }
 td:nth-child(2), th:nth-child(2) {
     text-align: center;
-    width: auto;
+   /* width: auto;*/
   }
   
   td {
@@ -193,8 +193,15 @@ color: #000000;
 }
 
 .nom{
- width: auto;
+ width: 100;
+}
+.not{
+width: 100%;
+}
+.mat{
+  width: 85%;
+
 }
 .num{
-width: 100px;
+  width: 100px;
 }

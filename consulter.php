@@ -85,8 +85,8 @@
             $average = $average_stmt->fetch();
 
             $average_value = round($average['average'], 2);
-            $message_class = $average_value > 10 ? 'success' : 'failure';
-            $message_text = $average_value > 10 ? 'Félicitations, vous avez atteint la moyenne !' : 'Désolé, vous n\'avez pas atteint la moyenne.';
+            $message_class = $average_value >= 10 ? 'success' : 'failure';
+            $message_text = $average_value >= 10 ? 'Félicitations, vous avez atteint la moyenne !' : 'Désolé, vous n\'avez pas atteint la moyenne.';
 
             echo "<h4>Moyenne : $average_value</h4>";
             echo "<p class='message $message_class'>$message_text</p>";

@@ -57,8 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $average_value = round($average['average'], 2);
 
         // Déterminer le message de réussite/échec
-        $message_text = $average_value > 10 ? 'Félicitations, vous avez atteint la moyenne !' : 'Désolé, vous n\'avez pas atteint la moyenne.';
-        $message_color = $average_value > 10 ? 'green' : 'red';
+        $message_text = $average_value >= 10 ? 'Félicitations, vous avez atteint la moyenne !' : 'Désolé, vous n\'avez pas atteint la moyenne.';
+        $message_color = $average_value >= 10 ? 'green' : 'red';
 
         // Création du PDF
         $pdf = new TCPDF();

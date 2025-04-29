@@ -113,6 +113,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </script>
 
     <p>Pas encore inscrit ? <a href="signup.php">S'inscrire ici.</a></p> <!-- Lien vers la page d'inscription -->
-    <p style="margin-top:87px;">Cette page est exclusivement réservée aux professeurs pour l'ajout des notes. Veuillez vous connecter pour y accéder.</p>
+    <marquee direction="left" class="cette">Cette page est exclusivement réservée aux professeurs pour l'ajout des notes. Veuillez vous connecter pour y accéder.</marquee>
 </body>
 </html>

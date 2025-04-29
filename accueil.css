@@ -97,8 +97,12 @@ h1, h2, h3, h4 {
 .perf{
 width: auto;
 height: 400px;
-margin:auto;
+margin: 0;         /* Supprime toutes les marges */
+display: block;    /* S'assure que l'image se comporte comme un bloc */
 }
+
+
+
 
 
 
@@ -154,4 +158,167 @@ section span:hover {
     width: calc(20vw - 2px);
     height: calc(20vw - 2px);
   }
+}
+
+
+@media screen and (max-width: 950px) {
+  
+.suivre {
+  color: rgb(255, 255, 255); /* Couleur blanche pour le texte */
+  font-size: 1.5em;
+}
+
+.performance {
+  color: #7ed957; /* Change la couleur du texte en vert */
+  font-size: 1.5em;
+}
+
+
+
+
+}
+  
+@media screen and (max-width : 1250px) {
+  .snip1226{ 
+    display: none;
+  }
+  
+  .perf{
+    display: none;
+      }
+  
+      
+  
+}
+
+@media screen and (max-width: 700px){
+  
+  .suivretesperformance {
+    margin-top:80%;
+    margin: 0;
+  }
+    
+ 
+}
+
+
+@media screen and (min-width:2000px){
+  .perf{
+    width: auto;
+    height: 800px;
+  }
+  .paragraphe{
+    font-size: 1em;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 500; /* Gras */
+    line-height: 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    
+    word-spacing: 3px;
+    margin-top: 10px;    /* Espace au-dessus */
+    margin-bottom: 10px; /* Espace en dessous */
+
+  }
+  .suivretesperformance{
+
+    margin-bottom: 500px;
+  
+  }
+}
+
+  
+.perf-bas{
+  width: 100%; /* L'image occupe 100% de la largeur de son conteneur */
+  max-width: 500px;
+  width: 400px; /* La largeur maximale de l'image */
+  height: auto; /* Garde les proportions de l'image */
+  position: absolute; /* Positionnement absolu */
+  top : 73%; /* Place l'image en bas */
+  left:10%; /* Centre horizontalement */
+  display: none;
+  
+}
+
+@media screen and (max-width : 1250px) {
+  .perf-bas{
+   display: block;
+  }
+}
+
+@media screen and (min-width : 1600px ) and ( max-width:1999px) {
+  .perf{
+    height: auto;
+    width: 600px;
+
+  }
+  
+}
+
+@media screen and (min-width : 375px ) and (max-width : 413px ){
+  .suivretesperformance{
+    margin-top: 100px;
+
+  }
+  
+}
+
+.menu{
+  height: auto;
+  width: 50px;
+  position: absolute;
+  top: 40px;
+  right: 120px;
+  display: none;
+
+}
+
+@media screen and (max-width : 1250px) {
+  .menu{
+    display: block;
+  }
+}
+
+
+
+
+
+
+/* Style de l'image */
+.menu {
+  width: 30px; /* Ajustez selon vos besoins */
+  cursor: pointer;
+}
+
+/* Style du menu déroulant */
+.dropdown-menu {
+  position: absolute;
+  top: 110px; /* Ajustez pour aligner avec l'image */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Masqué par défaut */
+  padding: 10px;
+  z-index: 10;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  margin: 5px 0;
+}
+
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #007bff;
 }

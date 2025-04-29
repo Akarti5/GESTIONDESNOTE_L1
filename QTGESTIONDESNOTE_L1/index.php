@@ -140,7 +140,7 @@ $grades = $stmt->fetchAll();
         <form method="GET" class="rec">
             <label for="course_id">Sélectionnez une matière :</label>
             <select id="course_id" name="course_id" onchange="this.form.submit()">
-                <option value="">-- Sélectionnez --</option>
+                <option value="">-- Tout --</option>
                 <?php foreach ($courses as $course): ?>
                     <option value="<?= $course['id'] ?>" <?= $selected_course_id == $course['id'] ? 'selected' : '' ?>>
                         <?= htmlspecialchars($course['name']) ?>
@@ -158,9 +158,9 @@ $grades = $stmt->fetchAll();
             <thead>
                 <tr>
                     <th class="nom">Nom de l'étudiant</th>
-                    <th >Numéro de l'étudiant</th>
-                    <th  class="num">Matière</th>
-                    <th class="num">Note</th>
+                    <th class="num">Numéro de l'étudiant</th>
+                    <th  class="mat">Matière</th>
+                    <th class="not">Note</th>
                 </tr>
             </thead>
             <tbody>

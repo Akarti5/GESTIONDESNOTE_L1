@@ -27,10 +27,11 @@ form {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="confirm-password"] {
     width: 94%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 6px 0;
     border: none;
     border-radius: 5px;
     background-color: #333; /* Couleur de fond des champs */
@@ -149,4 +150,17 @@ a:hover {
 
     #succes-message.fade-out {
         opacity: 0; /* Faire disparaître le texte en changeant l'opacité à 0 */
+    }
+
+    .sign{
+        position: relative;
+        top: 6%;
+    }
+    .sign .h2{
+        text-align: center;
+    }
+
+    .cette{
+position: relative;
+top: 75px;
     }
